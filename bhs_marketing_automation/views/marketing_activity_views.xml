@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+        <record id="marketing_activity_view_form_inherit" model="ir.ui.view">
+			<field name="name">marketing.activity.view.form.inherit</field>
+			<field name="model">marketing.activity</field>
+			<field name="inherit_id" ref="marketing_automation.marketing_activity_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='mass_mailing_id']" position="after">
+					<label for="limit_emails"/>
+					<div>
+						<field name="limit_emails" nolabel="1" class="w-25"/>
+						<span class="w-75"> emails per hour</span>
+					</div>
+					<field name="send_during_business_hours" invisible="activity_type != 'email'"/>
+				</xpath>
+				<xpath expr="//form//sheet//group" position="after">
+					<group string="Business hours" invisible="not send_during_business_hours">
+						<group>
+							<field name="campaign_timezone"/>
+						</group>
+						<group>
+							<label for="time_start"/>
+							<div>
+								<field name="time_start" nolabel="1" widget="float_time" class="w-25" required="activity_type == 'email'"/>
+								<b class="w-50 font-weight-bold text-muted">In your Timezone: </b>
+								<field name="time_start_tz" nolabel="1" widget="float_time" class="w-25 text-muted" readonly="1" force_save="1"/>
+								<field name="time_start_utc" nolabel="1" widget="float_time" class="w-50 text-muted" readonly="1" force_save="1" invisible="1"/>
+							</div>
+							<label for="time_stop"/>
+							<div>
+								<field name="time_stop" nolabel="1" widget="float_time" class="w-25" required="activity_type == 'email'"/>
+								<b class="w-50 font-weight-bold text-muted">In your Timezone: </b>
+								<field name="time_stop_tz" nolabel="1" widget="float_time" class="w-25 text-muted" readonly="1" force_save="1"/>
+								<field name="time_stop_utc" nolabel="1" widget="float_time" class="w-50 text-muted" readonly="1" force_save="1" invisible="1"/>
+							</div>
+						</group>
+					</group>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record id="bhs_marketing_trace_view_form_inherit" model="ir.ui.view">
+			<field name="name">bhs.marketing.trace.view.form.inherit</field>
+			<field name="model">marketing.trace</field>
+			<field name="inherit_id" ref="marketing_automation.marketing_trace_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='schedule_date']" position="after">
+					<field name="campaign_id" readonly="1" force_save="1"/>
+				</xpath>
+			</field>
+		</record>
+
+		<record id="bhs_marketing_trace_view_tree_inherit" model="ir.ui.view">
+			<field name="name">bhs.marketing.trace.view.tree.inherit</field>
+			<field name="model">marketing.trace</field>
+			<field name="inherit_id" ref="marketing_automation.marketing_trace_view_tree"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='schedule_date']" position="before">
+					<field name="campaign_id" readonly="1" force_save="1"/>
+				</xpath>
+			</field>
+		</record>
+
+		<record id="bhs_marketing_trace_view_pivot_inherit" model="ir.ui.view">
+			<field name="name">bhs.marketing.trace.view.pivot.inherit</field>
+			<field name="model">marketing.trace</field>
+			<field name="inherit_id" ref="marketing_automation.marketing_trace_view_pivot"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='activity_id']" position="replace">
+					<field name="campaign_id" type="col"/>
+					<field name="activity_id" type="col"/>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

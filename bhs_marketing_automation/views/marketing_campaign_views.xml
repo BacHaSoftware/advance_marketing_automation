@@ -1,0 +1,71 @@
+<odoo>
+    <data>
+
+        <record id="bhs_marketing_campaign_view_form_inherit" model="ir.ui.view">
+			<field name="name">bhs.marketing.campaign.view.form.inherit</field>
+			<field name="model">marketing.campaign</field>
+			<field name="inherit_id" ref="marketing_automation.marketing_campaign_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//button[@name='action_view_mailings']" position="replace">
+                    <button name="action_view_campaign_mailings" type="object" icon="fa-envelope-o"
+                            class="oe_stat_button" invisible="mass_mailing_count == 0">
+                        <field name="mass_mailing_count" widget="statinfo" string="Mailing"/>
+                    </button>
+				</xpath>
+				<xpath expr="//button[@name='action_view_tracker_statistics']" position="replace">
+                    <button name="action_view_tracker_statistics" type="object" icon="fa-mouse-pointer" class="oe_stat_button" invisible="link_tracker_click_count == 0 and state == 'draft'">
+						<field name="link_tracker_click_count" invisible="1"/> Clicks
+					</button>
+				</xpath>
+			</field>
+		</record>
+
+        <record id="bhs_marketing_campaign_mailing_view_mailing_form_inherit" model="ir.ui.view">
+			<field name="name">bhs.marketing.campaign.view.mailing.form.inherit</field>
+			<field name="model">marketing.campaign</field>
+			<field name="inherit_id" ref="marketing_automation.marketing_campaign_view_form"/>
+            <field name="mode">primary</field>
+			<field name="priority">100</field>
+			<field name="arch" type="xml">
+
+				<xpath expr="//form" position="attributes">
+					<attribute name="delete">0</attribute>
+					<attribute name="edit">0</attribute>
+					<attribute name="duplicate">0</attribute>
+				</xpath>
+
+				<xpath expr="//header" position="replace">
+					<field name="state" widget="statusbar" statusbar_visible="draft,running,stopped" />
+				</xpath>
+
+				<xpath expr="//div[@name='button_box']" position="replace"/>
+
+				<xpath expr="//div[hasclass('o_ma_hierarchy')]" position="replace">
+                    <field name="mass_mailing_ids">
+                        <tree string="Mailing">
+							<field name="calendar_date"/>
+                            <field name="subject"/>
+                            <field name="marketing_activity_ids" string="Activities" widget="many2many_tags"/>
+                            <field name="user_id"/>
+                            <field name="sent"/>
+                            <field name="received_ratio" widget="progressbar"/>
+                            <field name="opened_ratio" widget="progressbar"/>
+                            <field name="clicks_ratio"/>
+                            <field name="replied_ratio"/>
+                        </tree>
+                    </field>
+					<field name="marketing_activity_ids" invisible="1"/>
+				</xpath>
+
+			</field>
+		</record>
+
+        <record id="bhs_marketing_campaign_mailing_action" model="ir.actions.act_window">
+            <field name="name">Campaigns</field>
+            <field name="res_model">marketing.campaign</field>
+            <field name="view_mode">form</field>
+			<field name="view_id" ref="bhs_marketing_automation.bhs_marketing_campaign_mailing_view_mailing_form_inherit"/>
+        </record>
+
+	</data>
+</odoo>

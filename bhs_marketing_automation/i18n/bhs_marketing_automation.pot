@@ -1,0 +1,179 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bhs_marketing_automation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-16 08:38+0000\n"
+"PO-Revision-Date: 2024-05-16 08:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.marketing_activity_view_form_inherit
+msgid "<b class=\"w-50 font-weight-bold text-muted\">In your Timezone: </b>"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.marketing_activity_view_form_inherit
+msgid "<span class=\"w-75\"> emails per hour</span>"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_mailing_view_mailing_form_inherit
+msgid "Activities"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.marketing_activity_view_form_inherit
+msgid "Business hours"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_trace__campaign_id
+msgid "Campaign"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__campaign_timezone
+msgid "Campaign timezone"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.actions.act_window,name:bhs_marketing_automation.bhs_marketing_campaign_mailing_action
+msgid "Campaigns"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_view_form_inherit
+msgid "Clicks"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__in_queue
+msgid "In Queue"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_mailing_view_mailing_form_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_view_form_inherit
+msgid "Mailing"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.actions.act_window,name:bhs_marketing_automation.bhs_mailing_template_action
+#: model:ir.ui.menu,name:bhs_marketing_automation.mailing_templates_menu_action_marketing_automation
+msgid "Mailing Template"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model,name:bhs_marketing_automation.model_marketing_activity
+msgid "Marketing Activity"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model,name:bhs_marketing_automation.model_marketing_campaign
+msgid "Marketing Campaign"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model,name:bhs_marketing_automation.model_marketing_trace
+msgid "Marketing Trace"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_campaign__mass_mailing_ids
+msgid "Mass Mailing"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,help:bhs_marketing_automation.field_marketing_activity__limit_emails
+msgid "Maximum number of email to send per hour. Set to 0 for unlimited."
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_campaign__model_id
+msgid "Model"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__limit_emails
+msgid "Number of emails limit"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__sending
+msgid "Sending"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__done
+msgid "Sent"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__send_during_business_hours
+msgid "Sent during business hours"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__state
+msgid "Status"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#. odoo-python
+#: code:addons/bhs_marketing_automation/models/marketing_activity.py:0
+#, python-format
+msgid ""
+"The start time must be greater than the stop time and must be at least 1 "
+"hour apart"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_start
+msgid "Time start"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_start_utc
+msgid "Time start (UTC)"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_start_tz
+msgid "Time start (in TZ)"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_stop
+msgid "Time stop"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_stop_utc
+msgid "Time stop (UTC)"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_stop_tz
+msgid "Time stop (in TZ)"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#. odoo-python
+#: code:addons/bhs_marketing_automation/models/marketing_activity.py:0
+#, python-format
+msgid "You have to set limit emails between 1 and 500"
+msgstr ""

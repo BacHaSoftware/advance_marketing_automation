@@ -1,0 +1,181 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bhs_marketing_automation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-16 08:40+0000\n"
+"PO-Revision-Date: 2024-05-16 08:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.marketing_activity_view_form_inherit
+msgid "<b class=\"w-50 font-weight-bold text-muted\">In your Timezone: </b>"
+msgstr "<b class=\"w-50 font-weight-bold text-muted\">Tại múi giờ của bạn: </b>"
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.marketing_activity_view_form_inherit
+msgid "<span class=\"w-75\"> emails per hour</span>"
+msgstr "<span class=\"w-75\"> email mỗi giờ</span>"
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_mailing_view_mailing_form_inherit
+msgid "Activities"
+msgstr "Hành động"
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.marketing_activity_view_form_inherit
+msgid "Business hours"
+msgstr "Giờ làm việc"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_trace__campaign_id
+msgid "Campaign"
+msgstr "Chiến dịch"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__campaign_timezone
+msgid "Campaign timezone"
+msgstr "Múi giờ của chiến dịch"
+
+#. module: bhs_marketing_automation
+#: model:ir.actions.act_window,name:bhs_marketing_automation.bhs_marketing_campaign_mailing_action
+msgid "Campaigns"
+msgstr "Chiến dịch"
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_view_form_inherit
+msgid "Clicks"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__draft
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__in_queue
+msgid "In Queue"
+msgstr "Trong hàng chờ"
+
+#. module: bhs_marketing_automation
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_mailing_view_mailing_form_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_marketing_automation.bhs_marketing_campaign_view_form_inherit
+msgid "Mailing"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.actions.act_window,name:bhs_marketing_automation.bhs_mailing_template_action
+#: model:ir.ui.menu,name:bhs_marketing_automation.mailing_templates_menu_action_marketing_automation
+msgid "Mailing Template"
+msgstr "Mẫu gửi thư"
+
+#. module: bhs_marketing_automation
+#: model:ir.model,name:bhs_marketing_automation.model_marketing_activity
+msgid "Marketing Activity"
+msgstr "Hoạt động marketing"
+
+#. module: bhs_marketing_automation
+#: model:ir.model,name:bhs_marketing_automation.model_marketing_campaign
+msgid "Marketing Campaign"
+msgstr "Chiến dịch Marketing"
+
+#. module: bhs_marketing_automation
+#: model:ir.model,name:bhs_marketing_automation.model_marketing_trace
+msgid "Marketing Trace"
+msgstr "Dấu vết marketing"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_campaign__mass_mailing_ids
+msgid "Mass Mailing"
+msgstr ""
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,help:bhs_marketing_automation.field_marketing_activity__limit_emails
+msgid "Maximum number of email to send per hour. Set to 0 for unlimited."
+msgstr "Số lượng email tối đa để gửi mỗi giờ. Đặt thành 0 để bỏ giới hạn."
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_campaign__model_id
+msgid "Model"
+msgstr "Mô hình"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__limit_emails
+msgid "Number of emails limit"
+msgstr "Giới hạn số lượng email"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__sending
+msgid "Sending"
+msgstr "Đang gửi"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields.selection,name:bhs_marketing_automation.selection__marketing_activity__state__done
+msgid "Sent"
+msgstr "Gửi"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__send_during_business_hours
+msgid "Sent during business hours"
+msgstr "Gửi trong giờ làm việc"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__state
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: bhs_marketing_automation
+#. odoo-python
+#: code:addons/bhs_marketing_automation/models/marketing_activity.py:0
+#, python-format
+msgid ""
+"The start time must be greater than the stop time and must be at least 1 "
+"hour apart"
+msgstr ""
+"Thời gian bắt đầu phải lớn hơn thời gian kết thúc và phải cách nhau "
+"ít nhất một giờ"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_start
+msgid "Time start"
+msgstr "Giờ bắt đầu"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_start_utc
+msgid "Time start (UTC)"
+msgstr "Giờ bắt đầu theo UTC"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_start_tz
+msgid "Time start (in TZ)"
+msgstr "Giờ bắt đầu theo timezone"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_stop
+msgid "Time stop"
+msgstr "Giờ kết thúc"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_stop_utc
+msgid "Time stop (UTC)"
+msgstr "Giờ kết thúc theo UTC"
+
+#. module: bhs_marketing_automation
+#: model:ir.model.fields,field_description:bhs_marketing_automation.field_marketing_activity__time_stop_tz
+msgid "Time stop (in TZ)"
+msgstr "Giờ kết thúc theo timezone"
+
+#. module: bhs_marketing_automation
+#. odoo-python
+#: code:addons/bhs_marketing_automation/models/marketing_activity.py:0
+#, python-format
+msgid "You have to set limit emails between 1 and 500"
+msgstr "Bạn phải đặt giới hạn email trong khoảng từ 1 đến 500"

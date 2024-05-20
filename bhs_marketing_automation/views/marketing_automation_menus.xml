@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Marketing Automation / Mailing Templates -->
+    <menuitem id="mailing_templates_menu_action_marketing_automation"
+        action="bhs_marketing_automation.bhs_mailing_template_action"
+        parent="marketing_automation.marketing_automation_menu"
+        sequence="2"
+        groups="marketing_automation.group_marketing_automation_user"/>
+
+</odoo>
