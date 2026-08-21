@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': "Advance Marketing Automation",
+    'name': "Advanced Marketing Automation",
     'version': '1.0',
     'summary': 'Advance Marketing Automation',
     'category': 'Mail',
